@@ -7,6 +7,7 @@
   * [基本流程](/content/quick-primer/base-use.md)
 * [本地端](/content/local/README.md)
   * [合併分支](/content/local/merge.md)
+  * [重寫歷史](/content/local/rewrite-history.md)
   * [檢視版本紀錄](/content/local/git-log.md)
   * [選擇暫存紀錄](/content/local/choose-stage-record.md)
 * [遠程端](/content/remote/README.md)
