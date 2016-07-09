@@ -6,6 +6,7 @@
   * [基本流程](base_use.md)
 * [本地端](chapter_local.md)
   * [合併分支](merge.md)
+  * [檢視版本紀錄](git_log.md)
 * [遠程端](chapter_remote.md)
 * [附錄](chapter_appendix.md)
   * [版本規則](version_rule.md)
