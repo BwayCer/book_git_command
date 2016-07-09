@@ -9,5 +9,6 @@
   * [檢視版本紀錄](git_log.md)
 * [遠程端](chapter_remote.md)
 * [附錄](chapter_appendix.md)
+  * [.gitconfig 設定檔](set_gitconfig.md)
   * [版本規則](version_rule.md)
   * [提交命名前綴](prefix_describe.md)
