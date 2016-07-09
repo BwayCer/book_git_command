@@ -8,3 +8,5 @@
   * [合併分支](merge.md)
 * [遠程端](chapter_remote.md)
 * [附錄](chapter_appendix.md)
+  * [版本規則](version_rule.md)
+  * [提交命名前綴](prefix_describe.md)
