@@ -8,6 +8,7 @@
   * [合併分支](merge.md)
   * [檢視版本紀錄](git_log.md)
 * [遠程端](chapter_remote.md)
+  * [SSH 連線設定](set_ssh_link.md)
 * [附錄](chapter_appendix.md)
   * [.gitconfig 設定檔](set_gitconfig.md)
   * [版本規則](version_rule.md)
