@@ -2,7 +2,7 @@ Git 指令
 =======
 
 
-> 版本： v0.0<br />
+> 版本： v0.1<br />
 > 作者： BwayCer <bwaycer@gmail.com> (http://bwaycer.github.io/)
 
 
