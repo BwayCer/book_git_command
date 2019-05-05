@@ -1,0 +1,12 @@
+{
+    "title": "輯指令",
+    "description": "關於 Git 與 GitHub 間的常用指令。",
+    "plugins": [
+        "ga"
+    ],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-93985618-1"
+        }
+    }
+}
