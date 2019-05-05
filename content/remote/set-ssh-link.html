@@ -1,0 +1,481 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SSH 連線設定 · 輯指令</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../appendix/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quick-primer/">
+            
+                <a href="../quick-primer/">
+            
+                    
+                    快速入門
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quick-primer/record-area.html">
+            
+                <a href="../quick-primer/record-area.html">
+            
+                    
+                    Git 紀錄區
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../quick-primer/base-use.html">
+            
+                <a href="../quick-primer/base-use.html">
+            
+                    
+                    基本流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../local/">
+            
+                <a href="../local/">
+            
+                    
+                    本地端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../local/merge.html">
+            
+                <a href="../local/merge.html">
+            
+                    
+                    合併分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../local/git-log.html">
+            
+                <a href="../local/git-log.html">
+            
+                    
+                    檢視版本紀錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    遠程端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="set-ssh-link.html">
+            
+                <a href="set-ssh-link.html">
+            
+                    
+                    SSH 連線設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../appendix/">
+            
+                <a href="../../appendix/">
+            
+                    
+                    附錄
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../appendix/set-gitconfig.html">
+            
+                <a href="../../appendix/set-gitconfig.html">
+            
+                    
+                    .gitconfig 設定檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../appendix/version-rule.html">
+            
+                <a href="../../appendix/version-rule.html">
+            
+                    
+                    版本規則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../appendix/prefix-describe.html">
+            
+                <a href="../../appendix/prefix-describe.html">
+            
+                    
+                    提交命名前綴
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >SSH 連線設定</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ssh-&#x9023;&#x7DDA;&#x8A2D;&#x5B9A;">SSH &#x9023;&#x7DDA;&#x8A2D;&#x5B9A;</h1>
+<blockquote>
+<p>&#x6B64;&#x7BC7;&#x4E3B;&#x8981;&#x5728;&#x8AAA;&#x660E;&#x5982;&#x4F55;<span style="color: red;">&#x300E;&#x4E0D;&#x4F7F;&#x7528;&#x5BC6;&#x78BC;&#x300F;</span>&#x7684;&#x65B9;&#x5F0F;&#x8207; GitHub &#x9023;&#x7DDA;&#x3002;&#x7B46;&#x8005;&#x5C0D;&#x65BC;&#x6709;&#x95DC; SSH &#x7684;&#x5176;&#x5B83;&#x512A;&#x9EDE;&#x4E26;&#x4E0D;&#x66C9;&#x5F97;&#xFF0C;&#x6240;&#x4EE5;&#x82E5;&#x4E0D;&#x9700;&#x6B64;&#x529F;&#x80FD;&#x5247;&#x53EF;&#x8DF3;&#x904E;&#x6B64;&#x7BC7;&#x6587;&#x7AE0;&#x3002;</p>
+</blockquote>
+<h2 id="&#x9023;&#x7DDA;&#x65B9;&#x5F0F;">&#x9023;&#x7DDA;&#x65B9;&#x5F0F;</h2>
+<p>&#x5728;&#x4F7F;&#x7528; <code>git clone</code> &#x4E0B;&#x8F09;&#x6642;&#x6709;&#x6CE8;&#x610F;&#x5230; Git &#x7684;&#x9023;&#x7DDA;&#x65B9;&#x5F0F;&#x55CE;&#xFF1F;&#x5206;&#x70BA;&#xFF1A;</p>
+<ul>
+<li>HTTP &#x9023;&#x7DDA;&#xFF1A; <code>https://github.com/&lt;git &#x6A94;&#x6848;&#x8DEF;&#x5F91;&gt;.git</code></li>
+<li>SSH &#x9023;&#x7DDA;&#xFF1A; <code>git@github.com:&lt;git &#x6A94;&#x6848;&#x8DEF;&#x5F91;&gt;.git</code></li>
+</ul>
+<p>&#x8A2D;&#x5B9A; SSH &#x9023;&#x7DDA;&#x6709;&#x5169;&#x6B65;&#x9A5F;&#xFF1A; 1. &#x8A2D;&#x5B9A;&#x91D1;&#x9470;&#xFF1B; 2. &#x9023;&#x7DDA;&#x65B9;&#x5F0F;&#xFF0C;&#x4E8C;&#x8005;&#x7F3A;&#x4E00;&#x4E0D;&#x53EF;&#x3002;&#x5982;&#x679C;&#x4E00;&#x958B;&#x59CB;&#x4E0D;&#x662F;&#x9078;&#x64C7; SSH &#x9023;&#x7DDA;&#x7684;&#x65B9;&#x5F0F;&#x4E5F;&#x7121;&#x9700;&#x91CD;&#x65B0;&#x4E0B;&#x8F09;&#xFF0C;&#x53EA;&#x8981;&#x5F9E; <code>remote</code> &#x8A2D;&#x5B9A;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-sh">git remote remove origin
+git remote add origin git@github.com:&lt;git &#x6A94;&#x6848;&#x8DEF;&#x5F91;&gt;.git
+</code></pre>
+<h2 id="&#x8A2D;&#x5B9A;&#x91D1;&#x9470;">&#x8A2D;&#x5B9A;&#x91D1;&#x9470;</h2>
+<h3 id="&#x65B0;&#x589E;-ssh-&#x91D1;&#x9470;">&#x65B0;&#x589E; SSH &#x91D1;&#x9470;</h3>
+<p>&#x4F7F;&#x7528; <code>ssh-keygen</code> &#x6307;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-sh">$ ssh-keygen -t rsa -C &lt;&#x96FB;&#x5B50;&#x4FE1;&#x7BB1;&gt;
+<span class="hljs-comment"># &#x9810;&#x8A2D;&#x5C07;&#x5728; ~/.ssh &#x8DEF;&#x5F91;&#x65B0;&#x589E; id_rsa&#x3001;id_rsa.pub &#x79C1;&#x9470;&#x3001;&#x516C;&#x9470;&#x5169;&#x500B;&#x6A94;&#x6848;&#x3002;</span>
+
+$ ssh-keygen -t rsa <span class="hljs-_">-f</span> &lt;&#x91D1;&#x9470;&#x540D;&#x7A31;&gt; -C &lt;&#x96FB;&#x5B50;&#x4FE1;&#x7BB1;&gt;
+<span class="hljs-comment"># -f&#xFF1A; &#x81EA;&#x5B9A;&#x91D1;&#x9470;&#x540D;&#x7A31;&#x3002;</span>
+</code></pre>
+<p>&#x6F14;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x5728; ~/.ssh/</span>
+$ ssh-keygen -t rsa -C &lt;&#x96FB;&#x5B50;&#x4FE1;&#x7BB1;&gt;
+Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+<span class="hljs-comment"># passphrase &#x70BA;&#x4F7F;&#x7528; SSH &#x91D1;&#x9470;&#x7684;&#x5BC6;&#x78BC;&#xFF0C;&#x4F46;&#x5C31;&#x662F;&#x60F3;&#x8981;&#x4E0D;&#x8F38;&#x5165;&#x5BC6;&#x78BC;&#x6240;&#x4EE5;&#x9019;&#x7559;&#x767D;&#x5C31;&#x597D;&#x3002;</span>
+</code></pre>
+<h3 id="github-&#x8A2D;&#x5B9A;">Github &#x8A2D;&#x5B9A;</h3>
+<p>&#x8907;&#x88FD;&#x516C;&#x9470;&#x8A0A;&#x606F;&#xFF1A; &#xFF08;<span style="color: red;">&#x300C;&lt;&#x540D;&#x7A31;&gt;.pub&#x300D;&#x7684;&#x624D;&#x662F;&#x516C;&#x9470;</span>&#xFF09;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># clip &#x6307;&#x4EE4;&#x53EF;&#x5C07;&#x6A94;&#x6848;&#x5167;&#x5BB9;&#x8907;&#x88FD;&#x81F3;&#x526A;&#x8CBC;&#x7C3F;</span>
+$ clip &lt; &lt;&#x6A94;&#x6848;&#x8DEF;&#x5F91;&gt;
+</code></pre>
+<p>Github &#x8DEF;&#x5F91;&#xFF1A; <code>account &gt; setting &gt; SSH and GPG Keys</code></p>
+<p><img src="../../mmrepo/github-add-ssh-key.png" alt="Github &#x65B0;&#x589E; SSH &#x91D1;&#x9470;&#x7684;&#x7DB2;&#x9801;&#x622A;&#x5716;"></p>
+<p>&#x5728;&#x9EDE;&#x9078;&#x300C;New SSH key&#x300D;&#x6309;&#x9215;&#xFF0C;&#x8A2D;&#x5B9A;&#x586B;&#x5BEB;&#x5F8C;&#x4E26;&#x78BA;&#x8A8D; Github &#x5BC6;&#x78BC;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x3002;</p>
+<h3 id="&#x9023;&#x7DDA;&#x6E2C;&#x8A66;">&#x9023;&#x7DDA;&#x6E2C;&#x8A66;</h3>
+<pre><code class="lang-sh">$ ssh -T &lt;&#x4E3B;&#x6A5F;&#x540D;&#x7A31;&gt;
+
+$ ssh -vT &lt;&#x4E3B;&#x6A5F;&#x540D;&#x7A31;&gt;
+<span class="hljs-comment"># -v&#xFF1A; &#x8F38;&#x51FA;&#x9023;&#x7DDA;&#x8A0A;&#x606F;&#x3002;</span>
+</code></pre>
+<h2 id="&#x7BA1;&#x7406;&#x591A;&#x7D44;&#x91D1;&#x9470;">&#x7BA1;&#x7406;&#x591A;&#x7D44;&#x91D1;&#x9470;</h2>
+<p>&#x5EFA;&#x7ACB; <code>~/.ssh/config</code>  &#x6A94;&#x6848;&#x4F86;&#x7BA1;&#x7406; SSH &#x91D1;&#x9470;&#x6240;&#x5C0D;&#x61C9;&#x7684;&#x7DB2;&#x7AD9;&#x3002;</p>
+<p>&#x66F4;&#x6539;&#x6B0A;&#x9650;&#xFF1A;</p>
+<pre><code class="lang-sh">$ chmod 644 ~/.ssh/config
+$ la
+drwx------+ 1 chmiz None    0 &#x4E03;&#x6708; 13 07:19 ./
+drwxrwxr-x+ 1 chmiz None    0 &#x4E03;&#x6708; 13 07:19 ../
+-rw-r--r--+ 1 chmiz None  305 &#x4E03;&#x6708; 13 08:10 config
+<span class="hljs-comment">#----w--w-+ &lt;= &#x6709;&#x9019;&#x5169;&#x500B;&#x6703;&#x7121;&#x6CD5;&#x4F7F;&#x7528;</span>
+</code></pre>
+<p>config &#x8A2D;&#x5B9A;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code># &#x63D0;&#x793A;&#x8A3B;&#x89E3;
+Host &lt;&#x81EA;&#x8A02;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x7684;&#x5225;&#x540D;&gt;
+    HostName &lt;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x540D;&#x7A31;&gt;
+    IdentityFile ~/.ssh/&lt;&#x91D1;&#x9470;&#x540D;&#x7A31;&gt;
+</code></pre><p>&#x9023;&#x7DDA;&#x6E2C;&#x8A66;&#xFF1A;</p>
+<pre><code class="lang-sh">$ ssh -T &lt;&#x81EA;&#x8A02;&#x9060;&#x7AEF;&#x4E3B;&#x6A5F;&#x7684;&#x5225;&#x540D;&gt;
+</code></pre>
+<h2 id="&#x53C3;&#x8003;&#x8CC7;&#x6599;">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<ul>
+<li><a href="http://doraak47.blogspot.tw/2013/05/git-push.html" target="_blank">&#x5B78;&#x7FD2;&#x7B46;&#x8A18;: &#x4F7F;&#x7528;git push&#x4E0D;&#x518D;&#x9700;&#x8981;&#x8F38;&#x5165;&#x5E33;&#x865F;&#x5BC6;&#x78BC;</a></li>
+<li><a href="http://blog.alantsai.net/2016/03/ssh-config-ssh-agent-passphrase-management.html" target="_blank">&#x5982;&#x4F55;&#x7528;config&#x7BA1;&#x7406;&#x591A;&#x500B;&#x7DB2;&#x7AD9;&#x7684;ssh key&#x548C;&#x5982;&#x4F55;&#x4E0D;&#x7528;&#x6BCF;&#x4E00;&#x7D44;&#x8F38;&#x5165;ssh&#x7684;Pass Phrase @ Alan Tsai &#x7684;&#x5B78;&#x7FD2;&#x7B46;&#x8A18;</a></li>
+<li><a href="http://serverfault.com/questions/253313/ssh-hostname-returns-bad-owner-or-permissions-on-ssh-config" target="_blank">linux - ssh hostname returns &quot;Bad owner or permissions on ~/.ssh/config&quot; - Server Fault</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 遠程端">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../appendix/" class="navigation navigation-next " aria-label="Next page: 附錄">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSH 連線設定","level":"1.4.1","depth":2,"next":{"title":"附錄","level":"1.5","depth":1,"path":"appendix/README.md","ref":"appendix/README.md","articles":[{"title":".gitconfig 設定檔","level":"1.5.1","depth":2,"path":"appendix/set-gitconfig.md","ref":"appendix/set-gitconfig.md","articles":[]},{"title":"版本規則","level":"1.5.2","depth":2,"path":"appendix/version-rule.md","ref":"appendix/version-rule.md","articles":[]},{"title":"提交命名前綴","level":"1.5.3","depth":2,"path":"appendix/prefix-describe.md","ref":"appendix/prefix-describe.md","articles":[]}]},"previous":{"title":"遠程端","level":"1.4","depth":1,"path":"content/remote/README.md","ref":"content/remote/README.md","articles":[{"title":"SSH 連線設定","level":"1.4.1","depth":2,"path":"content/remote/set-ssh-link.md","ref":"content/remote/set-ssh-link.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-93985618-1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"輯指令","gitbook":"*","description":"關於 Git 與 GitHub 間的常用指令。"},"file":{"path":"content/remote/set-ssh-link.md","mtime":"2019-05-05T09:44:39.299Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-05T10:49:05.033Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
