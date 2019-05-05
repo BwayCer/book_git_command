@@ -30,6 +30,7 @@ $ git log --graph --oneline
 
 當需要輸出給電腦做分析而必須訂定明確地規則格式，又或者習慣以 Git 完全工作，都可以使用此指令來訂製一套專屬的版本線圖輸出格式。
 
+_實際案例可見 [.gitconfig 設定檔](/set_gitconfig.html)。_
 
 ```sh
 $ git log --pretty=format:"<自訂格式>"
