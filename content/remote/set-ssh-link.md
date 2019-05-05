@@ -63,7 +63,7 @@ $ clip < <檔案路徑>
 
 Github 路徑： `account > setting > SSH and GPG Keys`
 
-![Github 新增 SSH 金鑰的網頁截圖](github_add_ssh_key.png)
+![Github 新增 SSH 金鑰的網頁截圖](/mmrepo/github-add-ssh-key.png)
 
 在點選「New SSH key」按鈕，設定填寫後並確認 Github 密碼就完成了。
 
