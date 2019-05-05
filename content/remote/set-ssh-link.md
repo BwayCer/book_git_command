@@ -9,14 +9,14 @@ SSH 連線設定
 ## 連線方式
 
 
-在使用 ``` git clone ``` 下載時有注意到 Git 的連線方式嗎？分為：
+在使用 `git clone` 下載時有注意到 Git 的連線方式嗎？分為：
 
-  - HTTP 連線： ``` https://github.com/<git 檔案路徑>.git ```
-  - SSH 連線： ``` git@github.com:<git 檔案路徑>.git ```
+  - HTTP 連線： `https://github.com/<git 檔案路徑>.git`
+  - SSH 連線： `git@github.com:<git 檔案路徑>.git`
 
-設定 SSH 連線有兩步驟： 1. 設定金鑰； 2. 連線方式，二者缺一不可。如果一開始不是選擇 SSH 連線的方式也無需重新下載，只要從 ``` remote ``` 設定即可。
+設定 SSH 連線有兩步驟： 1. 設定金鑰； 2. 連線方式，二者缺一不可。如果一開始不是選擇 SSH 連線的方式也無需重新下載，只要從 `remote` 設定即可。
 
-```
+```sh
 git remote remove origin
 git remote add origin git@github.com:<git 檔案路徑>.git
 ```
@@ -29,7 +29,7 @@ git remote add origin git@github.com:<git 檔案路徑>.git
 ### 新增 SSH 金鑰
 
 
-使用 ``` ssh-keygen ``` 指令：
+使用 `ssh-keygen` 指令：
 
 ```sh
 $ ssh-keygen -t rsa -C <電子信箱>
@@ -61,9 +61,9 @@ $ clip < <檔案路徑>
 ```
 
 
-Github 路徑： ``` account > setting > SSH and GPG Keys ```
+Github 路徑： `account > setting > SSH and GPG Keys`
 
-![Github 新增 SSH 金鑰的網頁截圖](github_add_ssh_key.png)
+![Github 新增 SSH 金鑰的網頁截圖](/mmrepo/github-add-ssh-key.png)
 
 在點選「New SSH key」按鈕，設定填寫後並確認 Github 密碼就完成了。
 
@@ -71,7 +71,7 @@ Github 路徑： ``` account > setting > SSH and GPG Keys ```
 ### 連線測試
 
 
-```
+```sh
 $ ssh -T <主機名稱>
 
 $ ssh -vT <主機名稱>
@@ -83,7 +83,7 @@ $ ssh -vT <主機名稱>
 ## 管理多組金鑰
 
 
-建立 ``` ~/.ssh/config ```  檔案來管理 SSH 金鑰所對應的網站。
+建立 `~/.ssh/config`  檔案來管理 SSH 金鑰所對應的網站。
 
 
 更改權限：
@@ -110,7 +110,7 @@ Host <自訂遠端主機的別名>
 
 連線測試：
 
-```
+```sh
 $ ssh -T <自訂遠端主機的別名>
 ```
 

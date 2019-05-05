@@ -12,10 +12,10 @@
 ## 版本線圖
 
 
-指令加旗標 ``` --graph ``` 可在終端機上以 ASCII 畫出分支的分歧及合併的文字線圖。
+指令加旗標 `--graph` 可在終端機上以 ASCII 畫出分支的分歧及合併的文字線圖。
 
 
-```
+```sh
 $ git log --graph --oneline
 * cer7777 版本 v1.0
 |\
@@ -30,8 +30,9 @@ $ git log --graph --oneline
 
 當需要輸出給電腦做分析而必須訂定明確地規則格式，又或者習慣以 Git 完全工作，都可以使用此指令來訂製一套專屬的版本線圖輸出格式。
 
+_實際案例可見 [.gitconfig 設定檔](/appendix/set-gitconfig.md)。_
 
-```
+```sh
 $ git log --pretty=format:"<自訂格式>"
 
 $ git log --graph --pretty=format:'%h %ad | %s%d [%an]' --date=short
@@ -69,7 +70,7 @@ $ git log --graph --pretty=format:'%h %ad | %s%d [%an]' --date=short
 ### 塗色
 
 
-```
+```sh
 git log --graph --pretty=format:'%C(yellow)%h %C(white)%ad | %s%d [%an]' --date=short
 ```
 
@@ -88,13 +89,13 @@ git log --graph --pretty=format:'%C(yellow)%h %C(white)%ad | %s%d [%an]' --date=
  選項           | 說明
 :----           |:----
 --pretty        | 設定顯示格式。其選項包含 oneline、short、full、fuller 及可自訂格式的 format。
---oneline       | 同 ``` --pretty=format:'%C(yellow)%h %s%d' ``` 的簡短用法。
+--oneline       | 同 `--pretty=format:'%C(yellow)%h %s%d'` 的簡短用法。
 --abbrev-commit | 僅顯示SHA1查核值的前幾位數，而不是顯示全部的40位數。
 --date          | 其選項有short及可自訂格式的 format。
 --relative-date | 以相對於目前時間方式顯示日期（例如：“2 weeks ago”），而不是完整的日期格式。
 -p              | 顯示每個更新與上一個的差異。
 --stat          | 顯示每個更新更動的檔案的統計及摘要資訊。
---shortstat     | 僅顯示 ``` --stat ``` 提供的的訊息中關於更動、插入、刪除的文字。
+--shortstat     | 僅顯示 `--stat` 提供的的訊息中關於更動、插入、刪除的文字。
 --name-status   | 顯示新增、更動、刪除的檔案列表。
 --name-only     | 在更新的訊息後方顯示更動的檔案列表。
 --word-diff     | 使用 word diff 格式顯示 patch 內容。
@@ -113,14 +114,14 @@ git log --graph --pretty=format:'%C(yellow)%h %C(white)%ad | %s%d [%an]' --date=
 --committer       | 列出提交者名稱符合指定字串的更新。
 --grep            | 列出版本描述符合指定字串的更新。
 --all-match       | 比對多個字串（否則只會列出符合任一條件的更新）。
--- &lt;檔名&gt;   | 過濾路徑。一般會在前方加上 ``` -- ``` 用以區別。
+-- &lt;檔名&gt;   | 過濾路徑。一般會在前方加上 `--` 用以區別。
 
 
 關於指定時間範圍的方式：
 
-關於 ``` --since ``` 及 ``` --until ``` 指令選項可指定特定或相對的日期。
+關於 `--since` 及 `--until` 指令選項可指定特定或相對的日期。
 
-```
+```sh
 # 特定日期
 $ git log --since=1911-10-10
 
